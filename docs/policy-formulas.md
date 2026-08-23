@@ -1,0 +1,11 @@
+# 정책 산식 (server/domain.js)
+- displayPrice = memberPriceAllowed && brand≠FIXED ? round(basePrice × priceRate) : basePrice  (타깃 우선순위 PRODUCT > BRAND > CATEGORY > GLOBAL, 역할 조합이 많은 타깃 우선)
+- couponDiscount = PERCENT ? min(floor(display × value), maxDiscount) : min(value, display), minSpend 검사
+- payable = display − coupon − voucher
+- actualMaxPointRate = MIN(tierMax(또는 타깃), productMax ?? 100%, brandMax ?? 100%, campaignMax ?? 100%)
+- pointUsed = min(wallet, requested, floor(payable × actualMaxPointRate))
+- cashPaid = payable − pointUsed + shipping ; cashNetSales = cashPaid − shipping − refunded
+- selfEarn = floor(cashNetSales × cashEarnRate) ; XP = floor(cashNetSales / 1000)
+- L1/L2: volume = cashNetSales × lNVolumeRate ; reward = cashNetSales × lNRewardRate (L2 reward는 플래그)
+- 회수: clawback = −floor(original × returnedRatioBp) ; 부분반품 ratio = 반품 항목 현금 배분 / 주문 총 현금 배분
+- 차감 순서: expiresAt ASC, createdAt ASC

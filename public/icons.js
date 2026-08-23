@@ -1,0 +1,50 @@
+// Line icons (stroke = currentColor) and product "plates" — no stock photos, no copyrighted art.
+window.I = {
+  club: '<svg viewBox="0 0 24 24"><path d="M6 3h7a4 4 0 0 1 0 8H9"/><path d="M9 3v18"/><path d="M13 11c3 0 5 1.5 5 4s-2 4-5 4h-4"/></svg>',
+  shop: '<svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>',
+  rewards: '<svg viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11"/><path d="M4 13h16M12 9v11M8 9c-2-1-2-4 0-4s3 2 4 4c1-2 2-4 4-4s2 3 0 4"/></svg>',
+  profile: '<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>',
+  opp: '<svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/><circle cx="12" cy="12" r="3"/></svg>',
+  creator: '<svg viewBox="0 0 24 24"><path d="m12 3 2.6 5.5 6 .8-4.4 4.2 1.1 6L12 16.6 6.7 19.5l1.1-6L3.4 9.3l6-.8z"/></svg>',
+  seller: '<svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>',
+  orders: '<svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>',
+  quest: '<svg viewBox="0 0 24 24"><path d="M12 2l2 8 8 2-8 2-2 8-2-8-8-2 8-2z"/></svg>',
+  badge: '<svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5z"/></svg>',
+  admin: '<svg viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg>',
+  members: '<svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c.5-4 3-6 7-6s6.5 2 7 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14c3 0 5 1.5 6 5"/></svg>',
+  policy: '<svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg>',
+  ledger: '<svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>',
+  commerce: '<svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>',
+  audit: '<svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>',
+  bell: '<svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4z"/><path d="M10 21h4"/></svg>',
+  back: '<svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>',
+  arrow: '<svg viewBox="0 0 24 24" width="14" height="14" style="stroke:currentColor;fill:none;stroke-width:1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+  lock: '<svg viewBox="0 0 24 24"><rect x="6" y="11" width="12" height="10"/><path d="M9 11V7a3 3 0 0 1 6 0v4"/></svg>',
+  check: '<svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>',
+  logout: '<svg viewBox="0 0 24 24"><path d="M10 4H4v16h6M14 8l4 4-4 4M18 12H9"/></svg>',
+};
+const P = {
+  bag: '<path d="M20 40h60v40H20z"/><path d="M35 40v-8a15 15 0 0 1 30 0v8"/><path d="M20 55h60"/><circle cx="50" cy="66" r="3"/>',
+  jacket: '<path d="M30 22 50 16l20 6 10 18-10 4v38H30V44l-10-4z"/><path d="M50 16v66M40 44l10-14 10 14"/>',
+  watch: '<circle cx="50" cy="50" r="24"/><circle cx="50" cy="50" r="18"/><path d="M50 36v14l8 6M40 10h20l-3 16H43zM40 90h20l-3-16H43z"/>',
+  fragrance: '<path d="M35 40h30v44H35z"/><path d="M43 40v-12h14v12M40 28h20v-8H40z"/><path d="M42 58h16v14H42z"/>',
+  candle: '<path d="M34 44h32v40H34z"/><path d="M50 44v-10"/><path d="M50 20c4 5 4 9 0 12-4-3-4-7 0-12z"/>',
+  wellness: '<path d="M30 36h16v44H30zM54 50h16v30H54z"/><path d="M34 36v-6h8v6M58 50v-8h8v8"/><ellipse cx="50" cy="86" rx="30" ry="4"/>',
+  serum: '<path d="M40 38h20v44H40z"/><path d="M46 38v-8h8v8M50 30v-10"/><path d="M44 58h12"/>',
+  diffuser: '<path d="M38 56h24v26H38z"/><path d="M44 56v-8h12v8"/><path d="M50 48 36 16M50 48l8-34M50 48l18-28"/>',
+  tea: '<path d="M28 46h40v12a20 20 0 0 1-40 0z"/><path d="M68 50h8a6 6 0 0 1 0 12h-8"/><ellipse cx="48" cy="84" rx="26" ry="4"/><path d="M40 30c2 4 0 8 2 12M52 28c2 4 0 8 2 12"/>',
+  case: '<rect x="22" y="36" width="56" height="40" rx="3"/><path d="M22 52h56M42 36v-6h16v6"/>',
+  scarf: '<path d="M30 20c20 10 20 40 0 60M70 20c-20 10-20 40 0 60"/><path d="M30 80h10M60 80h10M30 20h10M60 20h10"/>',
+  book: '<path d="M26 22h44v56H26z"/><path d="M34 22v56M40 36h22M40 44h22"/>',
+  retreat: '<path d="M16 64h68M22 64V40h56v24"/><path d="M22 40 50 22l28 18"/><path d="M40 64V50h20v14"/><path d="M16 76c10-4 20-4 30 0s20 4 30 0"/>',
+  dining: '<circle cx="50" cy="52" r="22"/><circle cx="50" cy="52" r="15"/><path d="M18 30v28M24 30v14a6 6 0 0 1-12 0V30M80 30c-6 4-6 14 0 18v20"/>',
+  concierge: '<path d="M30 60h40v-4a20 20 0 0 0-40 0z"/><path d="M24 60h52M50 36v-6"/><path d="M36 76h28"/>',
+  studio: '<rect x="30" y="34" width="40" height="28"/><path d="M70 44l12-6v20l-12-6"/><path d="M50 62v20M40 82h20"/>',
+  default: '<path d="M38 28h24v44H38z"/>',
+};
+window.plate = (key, cls = '', label = '') => `<div class="plate ${cls}"><svg viewBox="0 0 100 100">${P[key] || P.default}</svg>${label ? `<span class="lbl">${label}</span>` : ''}</div>`;
+window.shield = (k) => `<div class="badge-shield"><svg viewBox="0 0 60 68"><path d="M30 3 5 11v20c0 15 10 27 25 33 15-6 25-18 25-33V11z"/>${{
+  bag: '<path d="M20 32h20v16H20zM25 32v-4a5 5 0 0 1 10 0v4"/>', compass: '<path d="M30 18v28M16 32h28M30 22l7 10-7 10-7-10z"/>', circle: '<circle cx="30" cy="30" r="10"/><circle cx="30" cy="26" r="3"/><path d="M24 36c2-3 10-3 12 0"/>',
+  p: '<path d="M24 20v26M24 20h8a6 6 0 0 1 0 12h-8"/>', chart: '<path d="M18 44h24M22 40v-8M30 40V24M38 40v-14M20 22l20-6"/>', tower: '<path d="M22 46V24l8-8 8 8v22M26 46v-8M34 46v-8M30 26v6"/>',
+  sun: '<path d="M18 40h24"/><path d="M22 40a8 8 0 0 1 16 0"/><path d="M30 22v4M20 28l3 3M40 28l-3 3"/>', laurel: '<path d="M30 20v26M22 26c4 2 6 6 6 10M38 26c-4 2-6 6-6 10M20 34c4 1 6 4 8 8M40 34c-4 1-6 4-8 8"/>'
+}[k] || ''}</svg></div>`;

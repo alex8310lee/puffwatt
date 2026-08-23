@@ -1,0 +1,17 @@
+{
+  "name": "puffwatt-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "PUFFWATT — Private Access Club. Zero-dependency full-stack MVP (Node 22 + built-in SQLite).",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "PUFFWATT_ENV=development node server/index.js",
+    "seed": "node server/seed.js",
+    "test": "node --test tests/*.test.js",
+    "build:html": "node build/build.mjs"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}

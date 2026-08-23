@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: puffwatt
+    runtime: node
+    buildCommand: "echo no build"
+    startCommand: "node server/index.js"
+    envVars:
+      - key: PUFFWATT_ENV
+        value: development   # 데모 로그인 활성. 실제 운영 시 production
+      - key: PUFFWATT_JOB_TOKEN
+        generateValue: true
+    disk:
+      name: data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1
