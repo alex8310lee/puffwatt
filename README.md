@@ -1,9 +1,15 @@
-# PUFFWATT — Private Access Club (MVP)
+# PUFFWATT — Private Access Club
+
+**바로 써보기 → https://alex8310lee.github.io/puffwatt/** (설치 없음, 폰·PC 모두 가능)
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/alex8310lee/puffwatt)
+← 여러 사람이 같은 데이터를 공유하는 서버 버전이 필요할 때 클릭 (무료 플랜 가능)
+
 
 초대 기반 프라이빗 멤버십 풀스택 MVP. **외부 의존성 0** — Node 22의 내장 SQLite(`node:sqlite`)와 `node:http`만 사용합니다.
 
 ## 실행 — 가장 빠른 방법
-- **설치 없이 HTML 하나로**: `dist/PUFFWATT.html`(또는 `npm run build:html`)을 더블클릭. 브라우저 안에서 SQLite(WASM)가 돌고 데이터는 localStorage에 저장됩니다. 오프라인 동작, 모바일 브라우저 OK. 초기화: 콘솔에서 `__resetPuffwatt()`. 비밀번호 해시는 데모용 단순 해시이며 운영용이 아닙니다.
+- **웹에서 바로**: https://alex8310lee.github.io/puffwatt/ · **로컬 파일로**: `dist/PUFFWATT.html` 더블클릭. 브라우저 안에서 SQLite(WASM)가 돌고 데이터는 localStorage에 저장됩니다. 오프라인 동작, 모바일 브라우저 OK. 초기화: 콘솔에서 `__resetPuffwatt()`. 비밀번호 해시는 데모용 단순 해시이며 운영용이 아닙니다.
 - **macOS**: `run.command` 더블클릭 (처음엔 우클릭 → 열기)  ·  **Windows**: `run.bat` 더블클릭  ·  **Linux**: `./run.sh`
 - 브라우저가 자동으로 http://localhost:3000 을 엽니다. 첫 실행 시 DB와 데모 데이터가 자동 생성됩니다.
 - **Docker**: `docker build -t puffwatt . && docker run -p 3000:3000 -v puffwatt-data:/data puffwatt`
