@@ -9,7 +9,8 @@
     "dev": "PUFFWATT_ENV=development node server/index.js",
     "seed": "node server/seed.js",
     "test": "node --test tests/*.test.js",
-    "build:html": "node build/build.mjs"
+    "build:html": "node build/build.mjs",
+    "love": "love love2d"
   },
   "engines": {
     "node": ">=22.5"

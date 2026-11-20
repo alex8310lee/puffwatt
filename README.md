@@ -52,6 +52,18 @@ tests/               node:test 단위 테스트 10건
 docs/test-results/   375/768/1280 실제 렌더 캡처 25장 (수평 오버플로 0, 런타임 오류 0)
 ```
 
+## LÖVE(Love2D) 클라이언트 — `love2d/`
+같은 서버 API(`/api/*`)에 붙는 Lua 네이티브 클라이언트. 로그인(이메일/데모 계정) → 클럽 홈 · 카탈로그(장바구니 담기) · 퀘스트(완료) · 포인트 원장.
+```bash
+npm run dev                          # 1) 서버 실행 (http://localhost:3000)
+love love2d                          # 2) LÖVE 11.4+ 로 실행
+love love2d http://192.168.0.10:3000 # 다른 서버 주소 (또는 PUFFWATT_URL 환경변수, 로그인 화면에서 변경 가능)
+```
+- 네트워크는 `love.thread` 워커(LuaSocket)에서 돌아 화면이 멈추지 않습니다. 세션 쿠키는 LÖVE 저장 폴더 `session.json`에 보관(재실행 시 자동 로그인).
+- **HTTPS 서버**(Render 등)는 LÖVE 12(내장 `https`) 또는 LuaSec가 필요합니다. LÖVE 11은 `http://` 주소만 가능.
+- 한글 폰트는 OS 기본 폰트(맑은 고딕 / Apple SD Gothic Neo / Noto CJK·나눔)를 자동 탐색합니다. 없으면 `love2d/assets/font.ttf`를 넣으세요.
+- 단축키: `1`–`4` 탭 전환, `F5`/`Ctrl+R` 새로고침, `Tab` 입력칸 이동, `Esc` 종료.
+
 ## 핵심 규칙 (구현됨)
 - 금액·포인트 정수(KRW, P), 비율은 bp(10000=100%). 클라이언트는 렌더링만.
 - 주문 시 `benefitSnapshotJson`(정책 버전·등급·역할·산식 결과) 불변 보존. 미래 정책이 과거 주문을 바꾸지 않음.
